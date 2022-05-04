@@ -32,6 +32,10 @@ header {
   padding: 0 1%;
 }
 
+.comment:nth-child(odd) {
+  background-color: #BFD7EA;
+}
+
 footer {
   background-color: #0b3954;
   color: white;
