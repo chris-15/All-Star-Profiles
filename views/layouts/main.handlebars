@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All-Star Profiles</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <h1>
+    <header class="h-10">
+      <h1 class="font-bold text-3xl ">
         <a href="/">All-Star Profiles</a>
       </h1>
       <nav>
@@ -19,13 +20,16 @@
         <a href="/dashboard">Dashboard</a>  
         <button id="logout" class="btn-no-style">LOGOUT</button>
         {{else}}
-        <a href="/login">LOGIN</a>
+        <a class="font-bold text-3xl" href="/login">LOGIN</a>
         {{/if}}
       </nav>
     </header>
     <main>
       {{{ body }}}
     </main>
+    <footer>
+        Group 3 &copy; 2022
+    </footer>
   </div>
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>

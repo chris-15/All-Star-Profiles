@@ -31,10 +31,13 @@ const hbs = exphbs.create({ helpers });
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+
+
 // express middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+console.log('look at this ' +  path.join(__dirname, 'public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //turnin on routes to use
