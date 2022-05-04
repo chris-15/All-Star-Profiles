@@ -3,14 +3,14 @@
     class="post-info-div block rounded-lg shadow-lg bg-white max-w-sm text-center">
     <div class="title py-3 px-6 border-b border-gray-300">
       <a href="/post/{{id}}">
-        <h3>{{title}}</h3>
+        <h3 class="text-xl font-medium">{{title}}</h3>
       </a>
-      <h4>Posted by {{user.username}}</h4>
+      <h4>{{user.username}} on {{format_date created_at}}</h4>
 
     </div>
 
     <div class="p-6">
-      <h5 class="text-gray-900 text-xl font-medium mb-2">
+      <h5 class="text-blue-600 hover:text-blue-700 transition duration-300 ease-in-out mb-4">
         <div class="post-url">
           <a href="{{post_url}}">{{user.username}}'s highlights here!</a>
         </div>
@@ -23,7 +23,8 @@
     <div class="py-3 px-6 border-t border-gray-300 text-gray-600">
       <a href="/post/{{id}}">{{comments.length}}
         {{format_plural "comment" comments.length}}</a>
-      {{format_date created_at}}
+      
     </div>
   </div>
 </div>
+
