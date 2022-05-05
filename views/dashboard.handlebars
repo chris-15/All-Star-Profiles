@@ -1,31 +1,73 @@
-<section>
-  <h2>Create New Post</h2>
+<section class="">
+  <h2 class="flex justify-center">Create New Post</h2>
 
-  <form class="new-post-form">
-    <div>
+  <div class="flex justify-center">
+    <form class="new-post-form block p-6 rounded-lg shadow-lg bg-white max-w-md">
+    <div class="form-group mb-6">
       <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
+      <input type="text" id="post-title" class="form-control block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="post-title" />
     </div>
-    <div>
+    <div class="form-group mb-6">
         <label for="post-url">Post URL</label>
-        <input id="post-url" name="post-url"/>
+        <input id="post-url" class="form-control block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="post-url"/>
     </div>
-    <div>
+    <div class="form-group mb-6">
       <label for="post-text">Post Text</label>
-      <input id="post-text" name="post-text" />
+      <textarea id="post-text" class="form-control block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="post-text"></textarea>
     </div>
-    <button type="submit" class="btn">Create</button>
+    <button type="submit" class=" btn w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Create</button>
   </form>
+  </div>
+  
 </section>
 
 {{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
-  <ol>
+<section class="">
+  <h2 class="flex justify-center">Your Posts</h2>
+  <ol class="grid grid-cols-3">
     {{#each posts as |post|}}
-    <li>
+    <li class="p-2">
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link btn inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Edit post</a>
     </li>
     {{/each}}
   </ol>
@@ -33,3 +75,4 @@
 {{/if}}
 
 <script src="/javascript/add-post.js"></script>
+

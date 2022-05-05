@@ -6,7 +6,7 @@ async function signupFormHandler(event) {
   const email = document.querySelector("#email-signup").value.trim();
   const password = document.querySelector("#password-signup").value.trim();
 
-
+// using validator package to validate user input 
   if(!validator.isEmail(email)) {
     alert('Email not valid! Please enter a valid email');
     return;
