@@ -17,5 +17,5 @@ const userData=[
         password: 'allnet'
     },
 ];
-const seedUser=() => User.bulkCreate(userData);
-module.exports=seedUser
+const seedUsers=() => User.bulkCreate(userData);
+module.exports=seedUsers
