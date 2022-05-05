@@ -1,6 +1,6 @@
 const { Post}=require("../models")
 
-const userData=[
+const postData=[
     {
         title: 'Finals Highlights',
         post_url: "https://www.youtube.com/watch?v=QEPjD3elq2M",
