@@ -112,6 +112,13 @@ router.put("/:id", withAuth, (req, res) => {
 
 //DELET to delete post by id if user logged in
 router.delete("/:id", withAuth, (req, res) => {
+  // deletes comment first if post has comments
+  Comment.destroy({
+    where: {
+      post_id: req.params.id,
+    }
+  })
+
   Post.destroy({
     where: {
       id: req.params.id,
