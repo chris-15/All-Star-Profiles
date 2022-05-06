@@ -68,24 +68,24 @@ router.get("/post/:id", (req, res) => {
       },
     ],
   })
-    .then(dbPostData => {
-        if (!dbPostData) {
-            res.status(404).json({ message: 'No post found with this id!' });
-            return;
-        }
+    .then((dbPostData) => {
+      if (!dbPostData) {
+        res.status(404).json({ message: "No post found with this id!" });
+        return;
+      }
 
-        //serialize the data
-        const post = dbPostData.get({ plain: true });
+      //serialize the data
+      const post = dbPostData.get({ plain: true });
 
-        res.render('single-post', {
-            post,
-            loggedIn: req.session.loggedIn
-        })
+      res.render("single-post", {
+        post,
+        loggedIn: req.session.loggedIn,
+      });
     })
-    .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 module.exports = router;

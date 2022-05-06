@@ -6,11 +6,11 @@ async function signupFormHandler(event) {
   const email = document.querySelector("#email-signup").value.trim();
   const password = document.querySelector("#password-signup").value.trim();
 
-// using validator package to validate user input 
-  if(!validator.isEmail(email)) {
-    alert('Email not valid! Please enter a valid email');
+  // using validator package to validate user input
+  if (!validator.isEmail(email)) {
+    alert("Email not valid! Please enter a valid email");
     return;
-  } 
+  }
 
   if (username && password) {
     // declaring variable to conduct fetch post to users table
@@ -26,10 +26,10 @@ async function signupFormHandler(event) {
     // check the response status
     if (response.ok) {
       console.log("success");
-      document.location.replace("/dashboard")
+      document.location.replace("/dashboard");
     } else {
       alert(response.statusText);
-      return; 
+      return;
     }
   }
 }
