@@ -1,19 +1,19 @@
-<article class="post border-2 ">
-  <div class="title">
-     <a href="/post/{{id}}">
-        <h3 class="text-xl font-medium">{{title}}</h3>
-      </a>
-      <h4>{{user.username}} on {{format_date created_at}}</h4>
+<article class="post p-8 border-4 border-transparent rounded-3xl">
+  <div class="title flex items-center justify-between">
+    <a href="/post/{{id}}">
+        <h3 class="text-3xl font-bold">{{title}}</h3>
+    </a>
+    <h4>{{user.username}} {{format_date created_at}}</h4>
   </div>
 
   <div class="post-content">
-    <h5 class="text-blue-600 hover:text-blue-700 transition duration-300 ease-in-out mb-4">
+    <h5 class="text-blue-400 hover:text-blue-700 transition duration-300 ease-in-out mb-4">
         <div class="post-url">
           <a href="{{post_url}}">{{user.username}}'s highlights here!</a>
         </div>
       </h5>
 
-      <p class="text-gray-700 text-base mb-4">
+      <p class="post-text text-base mb-4">
         {{post_text}}
       </p>
   </div>

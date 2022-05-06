@@ -30,6 +30,13 @@ header {
   color: white;
   padding: 0 1%;
 }
+.btn {
+  background-color: #0b3954;
+}
+.post {
+  background-color: #0b3954;
+  color: white;
+} 
 
 .comment:nth-child(odd) {
   background-color: #BFD7EA;
