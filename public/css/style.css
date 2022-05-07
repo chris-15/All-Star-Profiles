@@ -46,6 +46,7 @@ header {
 
 .new-post-form {
   background-color: #0b3954;
+  width: 50%;
 }
 
 .edit-post-form {
@@ -69,5 +70,9 @@ footer {
 
   #post-username-date {
     margin-top: 0.5rem;
+  }
+
+  .new-post-form {
+    width: 75%;
   }
 }
