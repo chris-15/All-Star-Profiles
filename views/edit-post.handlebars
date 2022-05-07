@@ -1,6 +1,6 @@
 <article class="">
   <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2 class="mt-8">
+  <h2 class="mt-8 text-2xl mb-2">
     Edit Post
   </h2>
 
@@ -11,14 +11,14 @@
         border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="text" value="{{post.title}}" />
     </div>
     <div>
-        <input name="post-url" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="text" value="{{post.post_url}}"/>
+        <input name="post-url" class="mb-2 form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="text" value="{{post.post_url}}"/>
     </div>
     <div>
       <textarea name="post-text" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="text">{{post.post_text}}
       </textarea>
     </div>
     
-  <button type="submit" class="text-black bg-white px-6 py-2.5 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+  <button type="submit" class="mt-4 text-black bg-white px-6 py-2.5 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
       Save post
   </button>
 
