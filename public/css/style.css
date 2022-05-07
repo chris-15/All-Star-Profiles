@@ -30,9 +30,11 @@ header {
   color: white;
   padding: 0 1%;
 }
+
 .btn {
   background-color: #0b3954;
 }
+
 .post {
   background-color: #0b3954;
   color: white;
@@ -45,6 +47,11 @@ header {
 .new-post-form {
   background-color: #0b3954;
 }
+
+.edit-post-form {
+  background-color: #0b3954;
+}
+
 footer {
   background-color: #0b3954;
   color: white;
