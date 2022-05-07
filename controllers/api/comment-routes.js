@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
-}); 
+});
 
 //POST to post a comment if user logged in
 router.post("/", withAuth, (req, res) => {
