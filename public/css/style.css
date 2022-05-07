@@ -60,3 +60,14 @@ footer {
   padding: 1%;
   font-size: 110%;
 }
+
+@media screen and (max-width: 639px) {
+  .post-title {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #post-username-date {
+    margin-top: 0.5rem;
+  }
+}
