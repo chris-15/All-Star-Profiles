@@ -13,11 +13,19 @@
 
 ## Description
 
+The purpose of this project was to create an application that aspiring high school athletes could use to post their sports highlights in hopes of getting the attention of college coaches for recruitment. We followed the MVC Paradigm in order to create the application using expres.js, handlebars, My SQL, sequelize, and various technologies listed in the credits section. 
+
+Below is the preview of the deployed application:
+
+<img src="./public/images/homepageSS.png" width="600" height="300">
+
 ## Installation
 
 The application does not require installion in order for the user to use the application. The following were installed to build the application Node.js, Express.js, dotenv, MySQL2, Sequelize, bcrypt, express-handlbars, express-session, connect-session-sequelize, validator, tailwind and fontawesome.
 
 ## Usage
+
+Deployed application found here: [All-Star Profiles](https://infinite-taiga-75694.herokuapp.com/)
 
 ## Tests
 
@@ -43,7 +51,7 @@ No tests conducted for this application but the users can test the GET, POST, PU
 - [FontAwesome Documentation](https://fontawesome.com/docs)
 - [Google Fonts](https://fonts.google.com/specimen/Josefin+Sans)
 
-  ## License
+## License
 
 MIT License
 
