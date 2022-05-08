@@ -40,7 +40,7 @@ app.use(express.urlencoded({ extended: true }));
 console.log('look at this ' +  path.join(__dirname, 'public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//turnin on routes to use
+//turning on routes to use
 app.use(routes);
 
 //turns connection on to db and server
